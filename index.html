@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Para ti 💛</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         PANTALLA DE ENTRADA
+    ========================== -->
+
+    <div id="entrada">
+
+        <div class="caja">
+
+            <div class="emoji">🌻</div>
+
+            <h1>Regalo especial para Itza Marian Santiago Vázquez 💛</h1>
+
+            <p>
+                Ingresa la fecha para descubrirlo
+            </p>
+
+            <input
+                type="text"
+                id="fecha"
+                placeholder="DD/MM/AAAA"
+            >
+
+            <button onclick="abrirPagina()">
+                Abrir 💛
+            </button>
+
+            <p id="error"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         PÁGINA PRINCIPAL
+    ========================== -->
+
+    <div id="pagina" class="oculto">
+
+        <audio id="musica" loop>
+    <source src="musica/010.mp3" type="audio/mpeg">
+</audio>
+
+        <h1>
+            Regalo para la niña de mis sueños 🌻
+        </h1>
+
+
+        <!-- =========================
+             ÁRBOL
+        ========================== -->
+
+        <div class="arbol-contenedor">
+
+            <div class="arbol">
+
+                <div class="tronco"></div>
+
+                <div class="rama rama1"></div>
+                <div class="rama rama2"></div>
+                <div class="rama rama3"></div>
+
+                <div class="copa">
+
+                    <span>🌻</span>
+                    <span>🌻</span>
+                    <span>🌻</span>
+                    <span>🌻</span>
+                    <span>🌻</span>
+                    <span>🌻</span>
+                    <span>🌻</span>
+                    <span>🌻</span>
+                    <span>🌻</span>
+                    <span>🌻</span>
+                    <span>🌻</span>
+                    <span>🌻</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             TEXTO
+        ========================== -->
+
+        <p class="subtitulo">
+
+            Si pudiera elegir un lugar seguro,
+            sería a tu lado.
+            Eres y serás el amor de mi vida.
+
+        </p>
+
+
+        <!-- =========================
+             CARTAS
+        ========================== -->
+
+        <div class="cartas">
+
+
+            <!-- CARTA 1 -->
+
+            <div class="carta" onclick="abrirCarta(this)">
+
+                <div class="sobre">
+
+                    <div class="corazon">💛</div>
+
+                    <div class="tapa"></div>
+
+                    <span>Abrir carta 💌</span>
+
+                </div>
+
+
+                <div class="contenido-carta">
+
+                    <h2>Para ti 💛</h2>
+
+                    <p>
+                        Este fué el primer día que nos conocimos. ¿Lo recuerdas?, este día es, fué y será mi dia favorito.
+                    </p>
+
+                    <img src="imagenes/0001.jpeg">
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARTA 2 -->
+
+            <div class="carta" onclick="abrirCarta(this)">
+
+                <div class="sobre">
+
+                    <div class="corazon">💛</div>
+
+                    <div class="tapa"></div>
+
+                    <span>Abrir carta 💌</span>
+
+                </div>
+
+
+                <div class="contenido-carta">
+
+                    <h2>Un recuerdo contigo 🌻</h2>
+
+                    <p>
+                        Esta foto es de la primera vez que viajé a Toluca para estar contigo.
+                    </p>
+
+                    <img src="imagenes/0002.jpeg">
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARTA 3 -->
+
+            <div class="carta" onclick="abrirCarta(this)">
+
+                <div class="sobre">
+
+                    <div class="corazon">💛</div>
+
+                    <div class="tapa"></div>
+
+                    <span>Abrir carta 💌</span>
+
+                </div>
+
+
+                <div class="contenido-carta">
+
+                    <h2>Lo que siento por ti 💛</h2>
+
+                    <p>
+                        Fotito del dia de la fiesta de mis papás, te veías preciosa.
+                    </p>
+
+                    <img src="imagenes/0003.jpeg">
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARTA 4 -->
+
+            <div class="carta" onclick="abrirCarta(this)">
+
+                <div class="sobre">
+
+                    <div class="corazon">💛</div>
+
+                    <div class="tapa"></div>
+
+                    <span>Abrir carta 💌</span>
+
+                </div>
+
+
+                <div class="contenido-carta">
+
+                    <h2>Otro recuerdo 🌻</h2>
+
+                    <p>
+                        Me encantan tus ojos y tus cachetitos, los amoooo.
+                    </p>
+
+                    <img src="imagenes/0004.jpeg">
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARTA 5 -->
+
+            <div class="carta" onclick="abrirCarta(this)">
+
+                <div class="sobre">
+
+                    <div class="corazon">💛</div>
+
+                    <div class="tapa"></div>
+
+                    <span>Abrir carta 💌</span>
+
+                </div>
+
+
+                <div class="contenido-carta">
+
+                    <h2>Siempre contigo 💛</h2>
+
+                    <p>
+                        Yo haría cualquier cosa para estar junto a ti.
+                    </p>
+
+                    <img src="imagenes/0005.jpeg">
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARTA 6 -->
+
+            <div class="carta" onclick="abrirCarta(this)">
+
+                <div class="sobre">
+
+                    <div class="corazon">💛</div>
+
+                    <div class="tapa"></div>
+
+                    <span>Abrir carta 💌</span>
+
+                </div>
+
+
+                <div class="contenido-carta">
+
+                    <h2>Para siempre 🌻</h2>
+
+                    <p>
+                        Eres mi princesa preciosa, el amor de mi vida.
+                    </p>
+
+                    <img src="imagenes/0006.jpeg">
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =========================
+             MENSAJE FINAL
+        ========================== -->
+
+        <div class="mensaje">
+
+            <h2>Para ti 💛</h2>
+
+            <p>
+                Desde el 27 de noviembre de 2022,
+                hay una historia que quiero seguir escribiendo contigo.
+            </p>
+
+        </div>
+
+
+        <!-- FLORES QUE SUBEN -->
+
+        <div id="flores"></div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
